@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <form action="{{ url_for('inputt') }}" method=post class=add-entry>
+      <dl>
+        <dt>JSON:
+        <dd><input type=text name=title>
+      </dl>
+    </form>
+{% endblock %}
